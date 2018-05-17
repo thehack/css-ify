@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title></title>
+	 <meta charset="UTF-8"> 
+</head>
+<body>
+
+	<canvas id="canvas"></canvas>
+
+	<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	canvas.width = 140;
+	canvas.height = 105;
+	
+ 	var img = new Image();
+	img.src = './image.jpg';
+
+	function drawImage() {
+		canvas.width = img.width;
+		canvas.height = img.height;
+		ctx.drawImage(img,0,0);
+		return getPixels()
+
+	}
+
+	function getPixels() {
+		document.write("position:absolute;<br>box-shadow:<br>")
+	    for (var x = 0; x < img.width; x++) {
+	    	for (var y = 0; y < img.height; y++) {
+	    		if ((x == img.width -1) && (y == img.height-1)) {
+	    			document.write( x + "px " + y + "px 0 1px rgb(" + ctx.getImageData(x, y, 1, 1).data.slice(0, 3) + ");");
+	    		} else {
+	    			document.write( x + "px " + y + "px 0 1px rgb(" + ctx.getImageData(x, y, 1, 1).data.slice(0, 3) + "),<br>");
+	    		}
+			};
+	    };
+	}
+	// wait for image to load
+	
+	var interval = setInterval(function(){
+		if(img.complete) {
+			clearInterval(interval)
+			return drawImage()
+		}
+	},500)
+</script>
+</body>
+</html>
