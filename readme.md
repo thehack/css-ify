@@ -25,3 +25,4 @@ Can be replaced by an auto-generated CSS rule:
 		...;
 }
 ```
+(The script above is a truncated example. Those three lines of data would produce the first three pixels of the Van Gogh)
