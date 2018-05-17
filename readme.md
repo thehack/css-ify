@@ -11,12 +11,17 @@ To use this little tool:
 
 ### Example:
 This image:
+
 ![Van Gogh](./image.jpg)
+
 Can be replaced by an auto-generated CSS rule:
 ```css
-position:absolute;
-box-shadow:
-	0px 0px 0 1px rgb(72,105,140),
-	0px 1px 0 1px rgb(103,136,167),
-	0px 2px 0 1px rgb(139,171,192),...
+#divID {
+	position:absolute;
+	box-shadow:
+		0px 0px 0 1px rgb(72,105,140),
+		0px 1px 0 1px rgb(103,136,167),
+		0px 2px 0 1px rgb(139,171,192),
+		...;
+}
 ```
