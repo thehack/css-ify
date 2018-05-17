@@ -10,6 +10,12 @@ To use this little tool:
 4. Copy the generated text as a css rule assigned to that div.
 
 ### Example:
-This Image | Can be Replacaced by This CSS Rule
----------- | ----------------------------------
-![Van Gogh](./image.jpg) | ``` position:absolute;<br>box-shadow:<br>0px 0px 0 1px rgb(72,105,140),<br>0px 1px 0 1px rgb(103,136,167),<br>0px 2px 0 1px rgb(139,171,192),<br>0px 3px 0 1px rgb(114,147,164),<br>0px 4px 0 1px rgb(108,140,155),...```
+This image:
+![Van Gogh](./image.jpg)
+Can be replaced by an auto-generated CSS rule:
+``` position:absolute;
+	box-shadow:
+	0px 0px 0 1px rgb(72,105,140),
+	0px 1px 0 1px rgb(103,136,167),
+	0px 2px 0 1px rgb(139,171,192),...
+```
