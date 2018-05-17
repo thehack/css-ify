@@ -1,5 +1,5 @@
-#CSS-ify 
-###Mostly Useless!
+# CSS-ify 
+### Mostly Useless!
 
 Some webservices allow custom css but do not allow the hosting of images. In such cases, this script might be useful.
 To use this little tool: 
