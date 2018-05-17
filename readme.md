@@ -12,4 +12,4 @@ To use this little tool:
 ### Example:
 This Image | Can be Replacaced by This CSS Rule
 ---------- | ----------------------------------
-![Van Gogh](./image.jpg) | ``` position:absolute;\nbox-shadow:\n\n0px 0px 0 1px rgb(72,105,140),\n0px 1px 0 1px rgb(103,136,167),\n0px 2px 0 1px rgb(139,171,192),\n0px 3px 0 1px rgb(114,147,164),\n0px 4px 0 1px rgb(108,140,155),...```
+![Van Gogh](./image.jpg) | ``` position:absolute;<br>box-shadow:<br>0px 0px 0 1px rgb(72,105,140),<br>0px 1px 0 1px rgb(103,136,167),<br>0px 2px 0 1px rgb(139,171,192),<br>0px 3px 0 1px rgb(114,147,164),<br>0px 4px 0 1px rgb(108,140,155),...```
